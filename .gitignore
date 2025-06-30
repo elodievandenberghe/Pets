@@ -1,0 +1,5 @@
+.env
+flake.lock
+package-lock.json
+.expo/
+node_modules/
