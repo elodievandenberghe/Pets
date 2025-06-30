@@ -1,6 +1,8 @@
 import React from "react";
-import { StyleSheet, TextInput, Text } from "react-native";
-
-const OwnersOverview = () => <Text>This is a test page</Text>;
+import { Text } from "react-native";
+import OwnerListComponent from "../components/OwnerListComponent";
+const OwnersOverview = () => {
+  return (<OwnerListComponent/>);
+};
 
 export default OwnersOverview;

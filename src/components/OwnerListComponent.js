@@ -1,8 +1,9 @@
 import React from "react";
 import { View, Text, StyleSheet, FlatList } from "react-native";
-import { people } from "../../people";
+import getAllOwners from "../api/owners";
+const OwnerListComponent = () => {
+  const people = getAllOwners;
 
-const List = () => {
   const { container, property } = styles;
 
   const renderItem = ({ item }) => {
@@ -24,6 +25,7 @@ const List = () => {
 
   return (
     <View>
+      <Text>smeow</Text>
       <FlatList
         data={people}
         renderItem={renderItem}
@@ -45,4 +47,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default List;
+export default OwnerListComponent;
